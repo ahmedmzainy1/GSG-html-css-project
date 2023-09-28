@@ -1,0 +1,578 @@
+.head1{
+    background-color: #091242;
+    width: 100vw;
+    height: 17.4vh;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 19.2vw;
+    width: 150px;
+    height: auto;
+}
+body{
+    margin: 0;
+}
+.photo{
+    position: relative;
+    background-image:url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63e0929d3f861255c6850881_home-banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8.4vh;
+    background-color: rgba(3,82,157,0.35);
+}
+.pro{
+    margin-right: 0;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 60px 100px;
+    grid-template-rows: 30px auto;
+    grid-template-areas:
+        "circle des" ,
+        "circle des1" ;
+}
+.circle{
+    margin-left: 0;
+    grid-area: circle;
+    background-color:#111c55;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #273270;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.des{
+    grid-area: des;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Krub, sans-serif;
+    font-size: 11px;
+    margin-left: 0;
+    justify-self: center;
+    align-self: center;
+}
+.des1{
+    grid-area: des1;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Krub, sans-serif;
+    font-size: 11px;
+}
+.head2-div{
+    margin-left: 19.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26vw;
+    height: inherit;
+}
+.v-line{
+    height: 15px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-self: center;
+}
+
+.head2-div a{
+    align-self: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Krub, sans-serif;
+    font-size: 11.5px;
+
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 8vw;
+    margin-left: 14.5vw;
+}
+.social a{
+    text-decoration: none;
+}
+i{
+    font-size: 15px;
+}
+.head-btn{
+    height: inherit;
+    width: 11vw;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: Krub, sans-serif;
+    color: #091242;
+    margin-left: 2.6vw;
+    font-size: 11px;
+    font-weight: 600;
+}
+.slide{
+    display: flex;
+}
+.yellow{
+    background-color: rgb(255,184,43);
+    width: 3px;
+    height: 18px;
+}
+.invis{
+    height: 18px;
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3,82,157,0.99);
+}
+.invisp{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Krub, sans-serif;
+    font-size: 11px;
+}
+.photo-des{
+    position: absolute;
+    width: 26vw;
+    height: 40vh;
+    top: 25vh;
+    left: 19.5vw;
+}
+h1{
+    color: white;
+    font-family: Rubik, sans-serif;
+    font-size: 40px;
+    font-weight: 750;
+    margin-top: 5px;
+}
+h6{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Krub, sans-serif;
+    font-size: 11px;   
+}
+.explore{
+    color: white;
+    font-family: Krub, sans-serif;
+    background-color: rgb(255,184,43);
+    border: none;
+    width: 10vw;
+    height: 7vh;
+    color: #091242;
+    font-weight: 750;
+    font-size: 11px;
+}
+.services{
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+}
+.slide2{
+    display: flex;
+}
+.wwd{
+    grid-area: wwd;
+}
+.yellow2{
+    background-color: rgb(255,184,43);
+    width: 3px;
+    height: 15px;
+}
+.invis2{
+    height: 15px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230,230,230);
+}
+.invis2p{
+    color: #091242;
+    font-family: Krub, sans-serif;
+    font-size: 10px;
+    font-weight: 650;
+}
+h2{
+    color: rgb(31,34,56);
+    font-family: Krub, sans-serif;
+    font-weight: 700;
+    margin-top: 2vh;
+}
+.line{
+    height: 11vh;
+    width: 1px;
+    background-color: rgb(216,216,216);
+    grid-area: line;
+    justify-self: center;
+}
+.ship, .flight, .van, .warehouse{
+    display: grid;
+    width: 22vw;
+    height: 15vh;
+    grid-template-columns: 4vw 2vw 18vw ;
+    grid-template-rows: 5vh auto;
+    grid-template-areas: "photo line title" "photo line des";
+}
+
+.ship img, .warehouse img, .van img, .flight img{
+    grid-area: photo;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+.ship h3, .warehouse h3, .van h3, .flight h3{
+    grid-area: title;
+    margin-top: 0;
+}
+.ship p, .warehouse p, .van p, .flight p{
+    grid-area: des;
+    color: rgb(102,108,137);
+    font-family: Krub, sans-serif;
+    font-size: 13px;
+    margin-top: 0;
+}
+.services-grid{
+    width: 70vw;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 22.5vh 22.5vh;
+    grid-template-areas: "wwd ship ware" " ahmed flight van";
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.ship{
+    grid-area: ship;
+}
+.warehouse{
+    grid-area: ware;
+}
+.flight{
+    grid-area: flight;
+}
+.van{
+    grid-area: van;
+}
+h3{
+    font-size:17px;
+    color: rgb(31,34,56);
+    font-family: Krub, sans-serif;
+    font-weight: 700;
+    margin-top: 2vh;
+}
+.transport-div{
+    position: relative;
+    width: auto;
+    height: 70vh;
+}
+.title2{
+    text-align: center;
+    color: rgb(31,34,56);
+    font-family: Krub, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+.transport{
+    margin-top: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    width: 90vw;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.liquid{
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a682788d62e6d569b874c8_project-image-1.jpg);
+    background-size:contain;
+}
+.packaging{
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a68546f1c7f6ac3fc6e77f_project-image-2.jpg);
+    background-size:cover;
+}
+.contract{
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a685e5a56bae79c16917dd_project-image-3.jpg);
+    background-size:contain;
+}
+.ware-dis{
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a685f1ddf22723d01e4041_project-image-4.jpg);
+    background-size:contain;
+}
+.specialized{
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a685fb9e3218c51969a400_project-image-5.jpg);
+    background-size:contain;
+}
+.liquid, .packaging , .contract, .ware-dis, .specialized {
+    width: 17vw;
+    height: 45vh;
+    position: relative;
+}
+.gradiant{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(2, 6, 27, 0.9) 13%, rgba(255,255,255,0) 40%);
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+.gradiant-text{
+    padding-left: 1.5vw;
+    padding-bottom: 0.2vw;
+}
+.gradiant-text h3{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.gradiant-text p{
+    color: rgb(255,184,43) ;
+    font-family: Krub, sans-serif;
+    font-size: 12.5px;
+    margin-top: 1vh;
+}
+.btn3{
+    position: absolute;
+    font-family: Krub, sans-serif;
+    background-color: #091242;
+    border: none;
+    width: 10vw;
+    height: 7vh;
+    color: white;
+    font-weight: 800;
+    font-size: 11px;
+    bottom: 5%;
+    left: 45%;
+    right: auto;
+}
+.end{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(to right, rgb(255,193,55), rgb(255,216,143) );
+    bottom: 0;
+}
+.meet{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0;
+}
+.meet-div{
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
+    margin-top: 8%;
+}
+
+.slide3{
+    display: flex;
+    margin-left: 44%;
+    margin-right: auto;
+}
+.meet h2{
+    margin-left: 36%;
+    margin-right: auto;
+    font-family: Rubik, sans-serif;
+    font-weight: 800;
+}
+.yellow3{
+    background-color: rgb(255,184,43);
+    width: 3px;
+    height: 15px;
+}
+.invis3{
+    height: 15px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230,230,230);
+}
+.invis3p{
+    color: #091242;
+    font-family: Krub, sans-serif;
+    font-size: 10px;
+    font-weight: 650;
+}
+.people{
+    display: flex;
+    width: 65vw;
+    height: 60vh;
+    justify-content: space-between;
+}
+.jessca{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a6c7cf73b07117ca6b81ec_team-image-1.jpg);
+}
+.kathleen{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    background-size: cover; 
+    background-position-x: center;
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a6cc4160216af21780288c_team-image-2.jpg);
+}
+.rebecca{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63a6cc4e0aa24472527499b1_team-image-3.jpg);
+}
+.blue{
+    width: 100%;
+    height: 22%;
+    background-color: #1c1f35;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.blue-div{
+    margin-left: 10%;
+    margin-top: 12%;
+}
+.jessca h3, .kathleen h3, .rebecca h3{
+    font-family: Krub, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+.jessca p, .kathleen p, .rebecca p{
+    font-family: Krub, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.create{
+    width: 100vw;
+    height: 100vh;
+}
+.big{
+    position: relative;
+    display: flex;
+    width: 97%;
+    height: 94%;
+    margin-left: 0;
+    margin-top: 3%;
+}
+.big-blue{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(9,18,66);
+}
+.big-grey{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(244,244,244);
+}
+.plane{
+    z-index: 0;
+    background-image: url(https://assets.website-files.com/63a43a1633ad3e2a969a6958/63b3ca3043a07306b34e63c1_features-image.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 50%;
+    height: 70%;
+}
+.move{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 25%;
+}
+.slide4{
+    display: flex;
+}
+.yellow4{
+    background-color: rgb(255,184,43);
+    width: 3px;
+    height: 18px;
+}
+.invis4{
+    height: 18px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+.invis4p{
+    color: #091242;
+    font-family: Krub, sans-serif;
+    font-size: 11px;
+}
+.plane-des{
+    position: absolute;
+    width: 26vw;
+    height: 40vh;
+    top: 21vh;
+    left: 59%;
+}
+.plane-des h1{
+    color: #091242;
+    font-family: Rubik, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+.plane-des h6{
+    color: rgba(9,18,66, 0.5);
+    font-family: Krub, sans-serif;
+    font-size: 11px;
+    font-weight: 700;   
+}
+.box{
+    display: grid;
+    grid-template-columns: 210px 210px;
+    grid-template-rows: 60px 60px 60px;
+}
+.icon-wrap {
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(135deg, #ffb629, #ffda56 50%, #ffd7a6);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.wrap {
+    min-width: 270px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    align-items: center;
+    display: flex;
+}
+.wrap h3{
+    color: #091242;
+    font-size: 15px;
+    font-weight: 500;
+}
